@@ -1,85 +1,85 @@
-#¼³Á¤°ª È®ÀÎ
+#ì„¤ì •ê°’ í™•ì¸
 git config --list
 
 
-#Git ÀúÀå¼Ò ¸¸µé±â
+#Git ì €ì¥ì†Œ ë§Œë“¤ê¸°
 git init
 git clone <url>
 
 
-#ÆÄÀÏÀÇ »óÅÂ È®ÀÎÇÏ±â
+#íŒŒì¼ì˜ ìƒíƒœ í™•ì¸í•˜ê¸°
 git status
 
 
-#ÆÄÀÏÀ» »õ·Î ÃßÀûÇÏ±â
+#íŒŒì¼ì„ ìƒˆë¡œ ì¶”ì í•˜ê¸°
 git add <filename>
 
 
-#ÆÄÀÏ »óÅÂ¸¦ °£´ÜÈ÷ È®ÀÎ
+#íŒŒì¼ ìƒíƒœë¥¼ ê°„ë‹¨íˆ í™•ì¸
 git status -s
 
 
-#ÆÄÀÏ»óÅÂ ºñ±³
+#íŒŒì¼ìƒíƒœ ë¹„êµ
 git diff
 git diff --staged
 git diff --cached
 
 
-#º¯°æ»çÇ× Ä¿¹ÔÇÏ±â
+#ë³€ê²½ì‚¬í•­ ì»¤ë°‹í•˜ê¸°
 git commit
-git commit -m "Ä¿¹Ô³»¿ë"
-git commit -a -m "ÆÄÀÏÃß°¡ÇÏ¸é¼­ Ä¿´ÖÇÏ±â"
+git commit -m "ì»¤ë°‹ë‚´ìš©"
+git commit -a -m "íŒŒì¼ì¶”ê°€í•˜ë©´ì„œ ì»¤ë‹›í•˜ê¸°"
 
 
-#ÆÄÀÏ»èÁ¦
+#íŒŒì¼ì‚­ì œ
 git rm <filename>
 
 
-#ÆÄÀÏÀÌ¸§ º¯°æ
+#íŒŒì¼ì´ë¦„ ë³€ê²½
 git mv <file_from> <file_to>
 
 
-#Ä¿¹Ô È÷½ºÅä¸® Á¶È¸ÇÏ±â
+#ì»¤ë°‹ íˆìŠ¤í† ë¦¬ ì¡°íšŒí•˜ê¸°
 git log
-git log -2		;ÃÖ±Ù 2°³
-git log -2 -p	;diff³»¿ëÆ÷ÇÔ
-git log --stat	;°¢ Ä¿¹ÔÀÇ Åë°èÁ¤º¸
+git log -2		;ìµœê·¼ 2ê°œ
+git log -2 -p	;diffë‚´ìš©í¬í•¨
+git log --stat	;ê° ì»¤ë°‹ì˜ í†µê³„ì •ë³´
 git log --pretty=format:"%h %s" --graph
 git log --oneline --decorate --graph --all
 git log --since=2.weeks
 git log --S<pattern>
 
 
-#µÇµ¹¸®±â
+#ë˜ëŒë¦¬ê¸°
 git commit --amend
 
 
-#¸®¸ğÆ® ÀúÀå¼Ò
+#ë¦¬ëª¨íŠ¸ ì €ì¥ì†Œ
 git remote
 git remote -v
-git remote add <short_name> <url>	;¸®¸ğÆ® ÀúÀå¼Ò Ãß°¡.
-git remote rename <org> <new>		;¸®¸ğÆ® ÀúÀå¼Ò ÀÌ¸§ º¯°æ
-git remote rm <name>				;¸®¸ğÆ® ÀúÀå¼Ò »èÁ¦
-git remote show origin				;¿ø°İÀúÀå¼Ò »ìÆìº¸±â
-git push origin master				;¸®¸ğÆ® ÀúÀå¼Ò¿¡ Push
+git remote add <short_name> <url>	;ë¦¬ëª¨íŠ¸ ì €ì¥ì†Œ ì¶”ê°€.
+git remote rename <org> <new>		;ë¦¬ëª¨íŠ¸ ì €ì¥ì†Œ ì´ë¦„ ë³€ê²½
+git remote rm <name>				;ë¦¬ëª¨íŠ¸ ì €ì¥ì†Œ ì‚­ì œ
+git remote show origin				;ì›ê²©ì €ì¥ì†Œ ì‚´í´ë³´ê¸°
+git push origin master				;ë¦¬ëª¨íŠ¸ ì €ì¥ì†Œì— Push
 
 
-#ÅÂ±× Á¶È¸ÇÏ±â
+#íƒœê·¸ ì¡°íšŒí•˜ê¸°
 git tag
-git tag -l 'ÆĞÅÏ'
+git tag -l 'íŒ¨í„´'
 
 
-#ºê·£Ä¡
-git branch <branch_name>			;ºê·£Ä¡ »ı¼º
-git checkout <branch_name>			;ÇØ´ç ºê·£Ä¡·Î ÀÌµ¿	
-git checkout -b iss53				;ºê·£Ä¡»ı¼º+Ã¼Å©¾Æ¿ô
+#ë¸Œëœì¹˜
+git branch <branch_name>			;ë¸Œëœì¹˜ ìƒì„±
+git checkout <branch_name>			;í•´ë‹¹ ë¸Œëœì¹˜ë¡œ ì´ë™	
+git checkout -b iss53				;ë¸Œëœì¹˜ìƒì„±+ì²´í¬ì•„ì›ƒ
 git checkout -b hotfix
-git commit -a -m '¿À·ù ¼öÁ¤ ÈÄ Ä¿¹Ô'
-git checkuot master					;master·Î ÀÌµ¿ ÈÄ
-git merge hotfix					;hotfix ºê·£Ä¡¸¦ ¸ÓÁöÇÑ´Ù.
-git branch -d hotfix				;hotfix ºê·£Ä¡¸¦ »èÁ¦ÇÑ´Ù.
-git branch -v						;ºê·£Ä¡¸¶´Ù ¸¶Áö¸· Ä¿¹Ô ¸Ş¼¼Áö¸¦ º¸¿©ÁØ´Ù.
-git branch --merged					;ÀÌ¹Ì branchÇÑ ¸ñ·ÏÀ» È®ÀÎÇÑ´Ù.
-git branch --no-merged				;ÇöÀç checkout ÇÑ ºê·£Ä¡¿¡ mergeÇÏÁö ¾ÊÀº ºê·£Ä¡¸¦ È®ÀÎÇÑ´Ù.
+git commit -a -m 'ì˜¤ë¥˜ ìˆ˜ì • í›„ ì»¤ë°‹'
+git checkuot master					;masterë¡œ ì´ë™ í›„
+git merge hotfix					;hotfix ë¸Œëœì¹˜ë¥¼ ë¨¸ì§€í•œë‹¤.
+git branch -d hotfix				;hotfix ë¸Œëœì¹˜ë¥¼ ì‚­ì œí•œë‹¤.
+git branch -v						;ë¸Œëœì¹˜ë§ˆë‹¤ ë§ˆì§€ë§‰ ì»¤ë°‹ ë©”ì„¸ì§€ë¥¼ ë³´ì—¬ì¤€ë‹¤.
+git branch --merged					;ì´ë¯¸ branchí•œ ëª©ë¡ì„ í™•ì¸í•œë‹¤.
+git branch --no-merged				;í˜„ì¬ checkout í•œ ë¸Œëœì¹˜ì— mergeí•˜ì§€ ì•Šì€ ë¸Œëœì¹˜ë¥¼ í™•ì¸í•œë‹¤.
 
-p93
+p100
